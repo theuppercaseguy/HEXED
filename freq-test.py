@@ -1,25 +1,25 @@
-from adafruit_servokit import ServoKit
-from time import sleep
+import Adafruit_PCA9685
+import time
+# Create an instance of the PCA9685 class
+pwm1 = Adafruit_PCA9685.PCA9685(0x40)
+pwm2 = Adafruit_PCA9685.PCA9685(0x41)
 
-kit = ServoKit(channels=16, address=0x40, frequency=120)
-kit1 = ServoKit(channels=16, address=0x41, frequency=120)
+# Set the PWM frequency to 50 Hz
+pwm1.set_pwm_freq(120)
+pwm2.set_pwm_freq(120)
 
-servo = 16
 
 while True:
-    k,channel,degree = input('enter servo k, channel, degree: ').split()
-    print(k,channel,degree)
+    
+    k,channel,frequency = input('enter servo k, channel, frequency: ').split()
+    print(k,channel,frequency)
     if k=="1":
-            kit.servo[int(channel)].angle = int(degree)
+        pwm1.set_pwm(int(channel), 0, int(frequency))
+    
     elif k == "2":
-            kit1.servo[int(channel)].angle = int(degree)
-    if k == "terminate":
+        pwm2.set_pwm(int(channel), 0,int(frequency))
+        
+    elif k == "terminate":
         exit(1)
     else:
         print("wrong statement or not working: ")
-    
-
-
-
-
-
