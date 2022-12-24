@@ -18,7 +18,7 @@ while True:
     
     elif k == "2":
         pwm2.set_pwm(int(channel), 0,int(frequency))
-        
+        2
     elif k == "terminate":
         exit(1)
     else:
