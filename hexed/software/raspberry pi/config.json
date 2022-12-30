@@ -1,0 +1,100 @@
+{
+    "legNames": [
+        "front_right",
+        "center_right",
+        "rear_right",
+        "rear_left",
+        "center_left",
+        "front_left"
+    ],
+    "legMountX": [
+        54.49,
+        77.99,
+        54.49,
+        -54.49,
+        -77.99,
+        -54.49
+    ],
+    "legMountY": [
+        77.82, 
+        0,
+        -77.82,
+        -77.82,
+        0,
+        77.82
+    ],
+    "legMountAngle": [
+        45,
+        0,
+        -45,
+        -135,
+        -180,
+        -225
+    ],
+    "legRootToJoint1": 19.00,
+    "legJoint1ToJoint2": 53.77,
+    "legJoint2ToJoint3": 69.99,
+    "legJoint3ToTip": 166.00,
+    "movementInterval": 400,
+    "movementSwitchDuration": 300,
+    "leg0Offset": [
+        0,
+        -40.0,
+        0
+    ],
+    "leg0Scale": [
+        1,
+        1,
+        1
+    ],
+    "leg1Offset": [
+        0,
+        -40.0,
+        0
+    ],
+    "leg1Scale": [
+        1,
+        1,
+        1
+    ],
+    "leg2Offset": [
+        0.0,
+        -40.0,
+        50.0
+    ],
+    "leg2Scale": [
+        1,
+        1,
+        1
+    ],
+    "leg3Offset": [
+        0.0,
+        -40.0,
+        20.0
+    ],
+    "leg3Scale": [
+        1,
+        1,
+        1
+    ],
+    "leg4Offset": [
+        0,
+        -40.0,
+        0
+    ],
+    "leg4Scale": [
+        1,
+        1,
+        1
+    ],
+    "leg5Offset": [
+        0,
+        0.0,
+        0
+    ],
+    "leg5Scale": [
+        1,
+        1,
+        1
+    ]
+}
