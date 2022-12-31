@@ -104,7 +104,7 @@ class Hexapod(Thread):
                 correction=self.config.get('leg1Offset', [0, 0, 0])),
             # rear right
             Leg(2,
-                [self.pca_right.servo[3], self.pca_right.servo[2],#0
+                [self.pca_right.servo[3], self.pca_right.servo[0],#0
                  self.pca_right.servo[1]],
                 correction=self.config.get('leg2Offset', [0, 0, 0])),
             # rear left
@@ -115,7 +115,7 @@ class Hexapod(Thread):
             # center left
             Leg(4,
                 [self.pca_left.servo[9], self.pca_left.servo[6],
-                 self.pca_left.servo[7]],
+                 self.pca_left.servo[5]],#5
                 correction=self.config.get('leg4Offset', [0, 0, 0])),
             # front left
             Leg(5,
